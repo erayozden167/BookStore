@@ -1,0 +1,57 @@
+/* src/css/Footer.css */
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2d2d2d; /* Daha modern bir koyu gri arka plan */
+    color: #e0e0e0; /* Daha açık yazı rengi */
+    padding: 4rem 0; /* Paddingi artırarak daha geniş bir footer */
+}
+
+    .footer a {
+        color: #b0b0b0; /* Daha açık gri link rengi */
+        text-decoration: none;
+        transition: color 0.3s ease, transform 0.3s ease; /* Renk ve dönüşüm geçişi */
+    }
+
+        .footer a:hover {
+            color: #4db8ff; /* Hover durumunda daha canlı mavi */
+            transform: translateY(-3px); /* Hover durumunda hafif bir yukarı hareket efekti */
+        }
+
+    .footer h5 {
+        font-size: 1.75rem; /* Başlık font boyutunu artırdık */
+        margin-bottom: 1.5rem;
+        font-weight: 600; /* Daha belirgin başlık fontu */
+    }
+
+    .footer p {
+        margin-bottom: 1rem; /* Paragraf altı boşluk artırıldı */
+    }
+
+    .footer .fab {
+        font-size: 1.75rem; /* Sosyal medya ikonlarının boyutunu artırdık */
+        transition: color 0.3s ease, transform 0.3s ease; /* Renk ve dönüşüm geçişi */
+    }
+
+        .footer .fab:hover {
+            color: #4db8ff; /* Hover durumunda sosyal medya ikonları için canlı mavi */
+            transform: translateY(-3px); /* Hover durumunda hafif bir yukarı hareket efekti */
+        }
+
+    .footer .list-unstyled {
+        padding-left: 0;
+        list-style: none;
+        margin: 0;
+    }
+
+    .footer .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+/* Sayfa içeriği ile footer arasında çakışma olmaması için */
+body {
+    padding-bottom: 150px; /* Footer yüksekliği kadar alt boşluk ekleyin */
+}

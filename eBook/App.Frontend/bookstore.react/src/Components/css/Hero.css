@@ -1,0 +1,97 @@
+/* Hero Bölümü Genel Stilleri */
+.hero-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/hero-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    min-height: 80vh; /* Minimum yüksekliği belirler */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px; /* Köşeleri yuvarlatır */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Gölge ekler */
+}
+
+.hero-header h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 3.5rem; /* Başlık boyutunu büyüttüm */
+    color: #fff;
+}
+
+.hero-header h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #f8f9fa; /* Daha açık bir gri tonu */
+    letter-spacing: 1px;
+}
+
+.hero-header .form-control {
+    background: rgba(255, 255, 255, 0.2); /* Arka plan yarı saydam */
+    color: #fff;
+    border-color: #fff;
+    box-shadow: none;
+    transition: background 0.3s ease;
+}
+
+.hero-header .form-control:focus {
+    background: rgba(255, 255, 255, 0.5); /* Odaklandığında arka planı daha belirgin yap */
+    border-color: #0d6efd;
+    color: #000;
+}
+
+.hero-header .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-header .btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Hover durumunda daha belirgin gölge */
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-item img {
+    border-radius: 15px;
+}
+
+.carousel-item a {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: rgba(0, 0, 0, 0.6); /* Yarı saydam arka plan */
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 50px; /* Düğmeleri yuvarlat */
+    transition: background 0.3s ease;
+}
+
+.carousel-item a:hover {
+    background: rgba(0, 0, 0, 0.8); /* Hover durumunda daha koyu arka plan */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Okları beyaz yapar */
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    .hero-header h1 {
+        font-size: 2.5rem; /* Küçük ekranlar için başlık boyutunu ayarlar */
+    }
+
+    .hero-header .form-control, .hero-header .btn-primary {
+        width: 100%; /* Küçük ekranlarda tam genişlikte */
+        margin-top: 10px; /* Aralarına boşluk ekler */
+    }
+
+    .carousel-item img {
+        height: auto; /* Küçük ekranlar için resim yüksekliğini ayarlar */
+    }
+}

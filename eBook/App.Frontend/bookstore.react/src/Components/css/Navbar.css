@@ -1,0 +1,88 @@
+/* src/css/Navbar.css */
+
+/* Genel navbar stilleri */
+.navbar {
+    background-color: #343a40; /* Daha açık koyu gri arka plan */
+    padding: 0.75rem 1rem; /* Daha geniş bir padding */
+}
+
+.navbar-brand h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700; /* Font weight'i hafifçe azaltarak daha modern bir görünüm */
+    color: #fff;
+    margin: 0;
+    font-size: 1.5rem; /* Başlık boyutunu biraz küçültüyoruz */
+}
+
+.nav-link {
+    position: relative;
+    font-size: 1rem; /* Linklerin boyutunu biraz küçültüyoruz */
+    padding: 8px 12px;
+    color: #e0e0e0; /* Daha açık bir renk */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 0.25rem; /* Kenarları hafifçe yuvarlatıyoruz */
+}
+
+    .nav-link:hover, .nav-link.active {
+        color: #fff; /* Hover ve aktif durumda yazı rengini beyaz yapıyoruz */
+        background-color: #495057; /* Hover durumunda arka plan rengi değişiyor */
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        background-color: #0d6efd;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease;
+    }
+
+    .nav-link:hover::after, .nav-link.active::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+/* Dropdown menü stili */
+.dropdown-menu {
+    background-color: #343a40; /* Koyu dropdown arka plan rengi */
+    border: none;
+    border-radius: 0.25rem; /* Köşeleri yuvarlatıyoruz */
+}
+
+.dropdown-item {
+    color: #e0e0e0; /* Daha açık renkli dropdown item */
+    transition: background-color 0.3s ease;
+    border-radius: 0.25rem; /* Köşeleri hafifçe yuvarlatıyoruz */
+}
+
+    .dropdown-item:hover {
+        background-color: #495057; /* Hover durumunda arka plan rengi */
+    }
+
+/* İkon stilleri */
+.btn-outline-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 50px; /* Butonları yuvarlattık */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid #fff; /* Buton kenarlarına beyaz sınır ekledik */
+}
+
+    .btn-outline-light:hover {
+        background-color: #0d6efd;
+        color: #fff;
+    }
+
+.fas {
+    transition: transform 0.3s ease;
+}
+
+.btn-outline-light:hover .fas {
+    transform: scale(1.2);
+}

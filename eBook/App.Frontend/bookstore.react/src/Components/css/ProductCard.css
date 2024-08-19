@@ -1,0 +1,61 @@
+.product-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Geçiş efektleri */
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Yazıları ortalamak için */
+}
+
+    .product-card:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hover efekti */
+        transform: translateY(-5px); /* Hover ile kartı yukarı kaydırma */
+    }
+
+.card-body {
+    padding: 15px;
+    flex: 1; /* İçeriğin esnemesini sağlar */
+}
+
+.card-title {
+    margin-bottom: 10px; /* Başlık ile yazar arasında boşluk */
+    font-size: 18px; /* Başlık font boyutu */
+    font-weight: bold; /* Başlık kalın yazı tipi */
+}
+
+.card-text {
+    margin-bottom: 15px; /* Yazar kısmı için alt boşluk */
+}
+
+.button-group {
+    display: flex;
+    justify-content: center; /* Düğmeleri ortalar */
+    gap: 12px; /* Düğmeler arasındaki boşluk */
+    margin-top: auto; /* Düğmeleri kartın altına yerleştirir */
+}
+
+.btn {
+    padding: 10px 16px; /* Buton padding büyütüldü */
+    border: none;
+    border-radius: 5px; /* Buton köşe yuvarlama */
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px; /* Buton yazı boyutu */
+    font-weight: bold; /* Buton yazı kalınlığı */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Buton geçiş efektleri */
+}
+
+    .btn:hover {
+        transform: translateY(-2px); /* Hover ile butonu yukarı kaydırma */
+    }
+
+.btn-update {
+    background-color: #007bff;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
